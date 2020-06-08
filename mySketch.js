@@ -1,9 +1,3 @@
-/*
- * Made by Stephcraft
- * website: https://stephcraft.net
- * game available at: https://stephcraft.itch.io/flappy-bird
- */
-
 var c;
 
 var sprite_flappy;
@@ -12,11 +6,6 @@ var sprite_city;
 var sprite_floor;
 var sprite_title;
 
-var sound_point;
-var sound_wing;
-var sound_hit;
-var sound_die;
-var sound_sweetwing;
 
 var font_flappy;
 
@@ -210,11 +199,11 @@ function setup() {
   
   
   //load
-  sprite_flappy = loadImage('img/flappybird.png');
-  sprite_pipe = loadImage('img/pipe.png');
-  sprite_city = loadImage('img/city.png');
-  sprite_floor = loadImage('img/floor.png');
-  sprite_title = loadImage('img/title.png');
+  sprite_flappy = loadImage('img/donut.svg');
+  sprite_pipe = loadImage('img/stolb.svg');
+  sprite_city = loadImage('img/backn.jpg');
+  sprite_floor = loadImage('img/floor.svg');
+  sprite_title = loadImage('img/click.jpg');
   
   
   sound_point = loadSound('sfx_point.wav');
@@ -492,16 +481,14 @@ var menu_gameover = {
       fill(222,215,152);
       rect(0,0,200,200);
       
-      noStroke();
-      fill(83,56,71);
-      text('by Stephcraft',0,-50);
+      
       
       //Title
       textSize(20);
       strokeWeight(5);
       stroke(83,56,71);
       fill(255);
-      text('Flappy Bird',0,-80);
+      text('Flying Donut',0,-80);
       
       //Info
       push();
